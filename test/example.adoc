@@ -1,0 +1,5 @@
+= Hello Asciidoctor
+:sectids!:
+
+include::./include1.adoc[]
+include::./include2.adoc[]

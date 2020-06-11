@@ -1,0 +1,33 @@
+{
+  "name": "asciidoctor-loader",
+  "version": "1.0.0",
+  "description": "A Webpack loader that converts Asciidoctr files to HTML",
+  "main": "index.js",
+  "repository": "https://github.com/henriette-einstein/asciidoctor-loader.git",
+  "author": "Armin Pfarr <arp@henriette-einstein.com>",
+  "license": "MIT",
+  "scripts": {
+    "test": "jest"
+  },
+  "devDependencies": {
+    "jest": "^25.4.0",
+    "memfs": "^3.1.2",
+    "memory-fs": "^0.5.0",
+    "node-eval": "^2.0.0",
+    "standard": "^14.3.3",
+    "webpack": "^4.43.0"
+  },
+  "dependencies": {
+    "@asciidoctor/core": "^2.2.0",
+    "@babel/core": "^7.9.0",
+    "@babel/preset-env": "^7.9.5"
+  },
+  "standard": {
+    "env": [
+      "jest"
+    ]
+  },
+  "jest": {
+    "testEnvironment": "node"
+  }
+}

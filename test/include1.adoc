@@ -1,0 +1,5 @@
+[#id1]
+== Section 1
+Test
+
+include::./include2.adoc[leveloffset=+1]
