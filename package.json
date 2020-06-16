@@ -1,8 +1,8 @@
 {
-  "name": "asciidoctor-loader",
+  "name": "@henriette-einstein/asciidoctor-loader",
   "version": "1.0.0",
   "description": "A Webpack loader that converts Asciidoctr files to HTML",
-  "main": "index.js",
+  "main": "loeader.js",
   "repository": "https://github.com/henriette-einstein/asciidoctor-loader.git",
   "author": "Armin Pfarr <arp@henriette-einstein.com>",
   "license": "MIT",
