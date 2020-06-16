@@ -1,6 +1,6 @@
-name: CI
+name: Build
 
-on: [push]
+on: [push, pull-request]
 
 jobs:
   build:
@@ -8,17 +8,15 @@ jobs:
 
     strategy:
       matrix:
-        node-version: [10.x, 12.x]
+        node-version: [12.x, 14.x]
 
     steps:
-      - uses: actions/checkout@v1
-      - name: Use Node.js ${{ matrix.node-version }}
+      - uses: actions/checkout@v2
+      - name: Set up Node.js ${{ matrix.node-version }}
         uses: actions/setup-node@v1
         with:
           node-version: ${{ matrix.node-version }}
-      - name: npm install, build, and test
-        run: |
-          npm install
-          npm test
-        env:
-          CI: true
+      - name: Install dependencies
+        run: npm ci
+      - name: Test
+        run: npm t
